@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: $main-color;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+
+    // font-family: 'Damion', cursive;
+    // font-family: 'Open Sans', sans-serif;
+    // font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0.5rem 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+       
+    & > li {
+        list-style: none;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 93.6rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+.section {
+    padding: 3.9rem 0;
+    overflow: hidden;
+    
+    
+}

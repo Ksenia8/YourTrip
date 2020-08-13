@@ -1,0 +1,38 @@
+{
+  "name": "snowboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "cross-env NODE_ENV=dev gulp",
+    "build": "cross-env NODE_ENV=prod gulp build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "browser-sync": "^2.26.7",
+    "cross-env": "^7.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-if": "latest",
+    "gulp-rm": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-glob": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-svg-sprite": "latest",
+    "gulp-svgo": "latest",
+    "gulp-uglify": "latest",
+    "node-sass": "latest"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1"
+  }
+}
