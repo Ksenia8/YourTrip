@@ -1,0 +1,30 @@
+.up {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(207, 200, 200);
+    bottom: 1rem;
+    right: -10rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+.up i {
+    color: #d04544;
+    font-size: 2rem;
+    margin: auto;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+    70% {
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}

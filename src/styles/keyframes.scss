@@ -1,0 +1,14 @@
+@keyframes hover {
+    0% {
+        top: -100%;
+        left: 100%;
+    }
+    50% {
+        top: 10%;
+        left: -10%;
+    }
+    100% {
+        top: -10%;
+        left: 0;
+    }
+}

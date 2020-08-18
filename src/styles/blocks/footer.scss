@@ -1,0 +1,19 @@
+.footer {
+    background-color: $color-blue;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+    &__content {
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #a3afba;
+    }
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,35 @@
+.socials {
+    &__items {
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        background-color: #f1f1f1;
+        color: $color-red;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        box-shadow: -0.5rem 0.5rem 2rem -0.5rem #010101;
+        position: relative;
+ 
+        &:hover {
+            background-color: #ff2626;
+            color: #f1f1f1;
+        }
+
+        &:focus,
+        &:active {
+            border: 1px solid #ff2626;
+            border-radius: 1rem;
+        }
+    }
+}

@@ -8,8 +8,336 @@
     <title>Trip</title>
 </head>
 <body>
+    <section class="about">
+        <div class="container">
+            <div class="about-wrap">
+                <header>
+                    <div class="header__menu">
+                        <nav class="menu">
+                            <ul>
+                                <li class="menu__list">
+                                    <a href="#" class="menu__item">About</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="menu__list">
+                                    <a href="#" class="menu__item">Hot tours</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="menu__list">
+                                    <a href="#" class="menu__item">Special offers</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="menu__list">
+                                    <a href="#" class="menu__item">Blog</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="menu__list">
+                                    <a href="#" class="menu__item">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="heading-wrap">
+                        <h1 class="heading">Your trip</h1>
+                        <i class="fa fa-plane fa-2x icon-plane"  aria-hidden="true"></i>
+                    </div>
+                </header>
+                <div class="card-wrap">
+                    <div class="card">
+                        <h2 class="title title--yellow">LONDON</h2>
+                        <p class="card__description">from</p>
+                        <p class="card__price">&#36;1000</p>
+                        <a href="#" class="btn btn--red">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container">
+            <div class="card-gallery">
+                <figure class="card-figure">
+                    <img src="images/gallery1.jpg" alt="Barcelona">
+                    <figcaption class="figcaption">
+                        <div class="card">
+                            <h2 class="title title--white">BARCELONA</h2>
+                            <p class="card__description card__description--gallery">from</p>
+                            <p class="card__price card__price--gallery">&#36;1000</p>
+                            <a href="#" class="btn btn--white">LEARN MORE</a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="card-figure">
+                    <img src="images/gallery2.jpg" alt="GOA">
+                    <figcaption class="figcaption">
+                        <div class="card">
+                            <h2 class="title title--white">GOA</h2>
+                            <p class="card__description card__description--gallery">from</p>
+                            <p class="card__price card__price--gallery">&#36;1500</p>
+                            <a href="#" class="btn btn--white">LEARN MORE</a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="card-figure">
+                    <img src="images/gallery3.jpg" alt="Paris">
+                    <figcaption class="figcaption">
+                        <div class="card">
+                            <h2 class="title title--white">GOA</h2>
+                            <p class="card__description card__description--gallery">from</p>
+                            <p class="card__price card__price--gallery">&#36;1600</p>
+                            <a href="#" class="btn btn--white">LEARN MORE</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="info-inner">
+                <div class="info-form">
+                    <div class="title-wrap">
+                        <h2 class="title">BOOKING FORM</h2>
+                    </div>
+                    <div class="form-wrapper">
+                        <form action="" class="form">
+                            <!-- fieldset 1 -->
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend form__legend--hidden"></legend>
+                                <div class="form__row">
+                                    <div class="form__group form__group--info">
+                                        <label for="name" class="form__label"></label>
+                                        <input class="form__control" type="text" id="name" placeholder="Name:" required>
+                                    </div>
+                                    <div class="form__group form__group--info">
+                                        <label for="email" class="form__label"></label>
+                                        <input class="form__control" type="text" id="email" placeholder="Email:" required>
+                                    </div>
+                                    <div class="form__group form__group--info">
+                                        <label for="country" class="form__label"></label>
+                                        <input class="form__control" type="text" id="country" placeholder="Country:" required>
+                                    </div>
+                                    <div class="form__group form__group--info">
+                                        <label for="hotel" class="form__label"></label>
+                                        <input class="form__control" type="text" id="hotel" placeholder="Hotel:" required>
+                                    </div>
+                                </div>
+                    
+                                <div class="form__group">
+                                    <label for="check-in" class="form__label form__label--check">Check-in</label>
+                                    <input class="form__control" type="date" id="check-in" value="2020-08-01">
+                                </div>
+                    
+                                <div class="form__group">
+                                    <label for="check-out" class="form__label form__label--check">Check-out</label>
+                                    <input class="form__control" type="date" id="check-out" value="2020-08-31">
+                                </div>
+                            </fieldset>
+                            <!-- fieldset 2 -->
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend">Comfort</legend>
+                                <div class="form__row form__row--radio">
+                                    <div class="form__radio">
+                                        <input type="radio" name="category" id="cheap" checked>
+                                        <label for="cheap">Cheap</label>
+                                    </div>
+                                    <div class="form__radio">
+                                        <input type="radio" name="category" id="standart">
+                                        <label for="standart">Standart</label>
+                                    </div>
+                                    <div class="form__radio">
+                                        <input type="radio" name="category" id="lux">
+                                        <label for="lux">Lux</label>
+                                    </div>
+                                </div>
+                                    
+                            </fieldset>
+                            <!-- fieldset 3 -->
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend form__legend--hidden"></legend>
+                                <div class="form__row">
+                                    <div class="form__group form__group--filter">
+                                        <label for="adults" class="form__label form__label--filter">Adults</label>
+                                        <select class="form__control form__control--filter" id="adults">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__group form__group--filter">
+                                        <label for="children" class="form__label form__label--filter">Children</label>
+                                        <select class="form__control form__control--filter" id="children">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__group form__group--filter">
+                                        <label for="rooms" class="form__label form__label--filter">Rooms</label>
+                                        <select class="form__control form__control--filter" id="rooms">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                    
+                                <div class="form__group form__group--message">
+                                    <label for="msg" class="form__label form__label--hidden"></label>
+                                    <textarea class="form__control form__control--message" id="msg" placeholder="Message"></textarea>
+                                </div>
+                            </fieldset>
+                            <div class="form__actions">
+                                <button class="btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="info-right column">
+                    <div class="info-welcome">
+                        <div class="title-wrap">
+                            <h2 class="title">WELCOME</h2>
+                            <div class="row">
+                                <div class="img-wrap">
+                                    <img src="images/welcome.jpg" alt="welcome" class="img-welcome">
+                                </div>
+                                <div class="column">
+                                    <p class="paragraph">Lorem ipsum dolor sit ere amet, consectetur ipiscin.</p>
+                                    <p class="paragraph">
+                                        In mollis erat mattis
+                                    neque facilisis, sit ametiol yloultricies erat rutrum.</p>
+                                </div>
+                            </div>
+                            <p class="paragraph">Find the detailed description of this freebie at TemplateMonster blog.</p>
+                            <p class="paragraph">Travel Website Templates category offers you a variety of designs that are perfect for travel sphere of business.</p>
+                            <p class="paragraph">Proin pharetra luctus diam, a scelerisque eros convallis accumsan. </p>
+                            <p class="paragraph">Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh.</p>
+                        </div>
+                    </div>
+                    <div class="info-quotes">
+                        <h2 class="title title--padding">Clients’ Quotes</h2>
+                        <div class="row">
+                            <div class="img-wrap">
+                                <img src="images/face_welcome.png" alt="face-welcome" class="img-face">
+                            </div>
+                            <div class="column">
+                                <blockquote class="blockqoute">
+                                    <p class="blockqoute__paragraph">
+                                        Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. Integer convallis orci vel mi laoreet
+                                    </p>
+                                    <cite class="blockqoute__cite">Miranda Brown</cite>
+                                </blockquote>
+                            </div>
+                            
+                        </div>
+                        <div class="form__actions">
+                            <button class="btn btn--right">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <h2 class="title title--center">Latest News</h2>
+                <div class="news-wrap">
+                    <div class="new">
+                        <div class="date">
+                            <div class="date__content">
+                                10
+                            </div>
+                            <div class="date__content date__content--month">
+                                jan
+                            </div>
+                            <div class="date__content">
+                                <i class="fas fa-comments date__content--message"></i>
+                            </div>
+                        </div>
+                        <div class="new__content">
+                            <div class="new__title">
+                                Aliquam nibh
+                            </div>
+                            <div class="new__description">
+                                Proin pharetra luctus diam, any scelerisque eros convallisumsan. Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new">
+                        <div class="date">
+                            <div class="date__content">
+                                21
+                            </div>
+                            <div class="date__content date__content--month">
+                                jan
+                            </div>
+                            <div class="date__content">
+                                <i class="fas fa-comments date__content--message"></i>
+                            </div>
+                        </div>
+                        <div class="new__content">
+                            <div class="new__title">
+                                Etiam dui eros
+                            </div>
+                            <div class="new__description">
+                                Any scelerisque eros vallisumsan. Maecenas vehicula egestas natis. Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new">
+                        <div class="date">
+                            <div class="date__content">
+                                15
+                            </div>
+                            <div class="date__content date__content--month">
+                                feb
+                            </div>
+                            <div class="date__content date__content--message">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="new__content">
+                            <div class="new__title">
+                                uamnibh Edeto
+                            </div>
+                            <div class="new__description">
+                                Ros convallisumsan. Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="up" id="up">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer__content">Your Trip &copy;2020</div>
+                <div class="footer__socials">
+                    <ul class="socials__items">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link"><i class="fab fa-facebook-f icon-socials"></i></a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link"><i class="fab fa-twitter icon-socials"></i></a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link"><i class="fab fa-google icon-socials"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     
-   <script src="main.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.min.js"></script>
     
 </body>
 </html>

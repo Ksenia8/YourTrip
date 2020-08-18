@@ -1,0 +1,14 @@
+.info {
+   background-color: #fff;
+}
+
+.info-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.info-form,
+.info-right {
+    width: 48%;
+}

@@ -1,0 +1,138 @@
+.form-wrapper {
+    max-width: 43.3rem;
+}
+.form {
+
+    &__actions {
+        display: flex;
+    }
+    
+    &__fieldset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        min-width: 0;
+    }
+
+    &__legend {
+        width: 100%;
+        font-size: 1.6rem;
+
+        &--hidden {
+            opacity: 0;
+        }
+    }
+
+    &__group {
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: row;
+
+        &--info {
+            width: 45%;
+        }
+
+        &--message {
+            max-width: 100%;
+            min-width: 100%;
+            
+        }
+
+        &--filter {
+            width: 45%;
+        }
+    }
+
+    &__label {
+        display: block;
+
+        &--check {
+            width: 12rem;
+        }
+
+        &--filter {
+            margin-left: 1.5rem;
+            width: 20rem;
+        }
+
+        &--hidden {
+            opacity: 0;
+        }
+    }
+
+    &__control {
+        display: block;
+        width: 100%;
+        outline: none;
+        background-color: #f0f3f5;
+        border: 1px solid rgba(95,94,94,0.12);
+        border-radius: 0.3rem;
+        padding: 0.2rem 2rem 0.2rem 0.6rem;
+        overflow: auto;
+        font-family: inherit;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        
+        &:hover {
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+        }
+
+        &:focus {
+            border: 1px solid rgb(197, 42, 55);
+        }
+
+        &--message {
+            height: 14.3rem;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &--radio {
+            justify-content: start;
+        }
+    }
+}
+
+// Radio-buttons
+.form__radio {
+    position: relative;
+}
+
+.form__radio input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.form__radio input[type="radio"] + label {
+    margin: 2rem 0;
+    padding-right: 5.5rem;
+    padding-left: 3rem;
+    display: block;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 50%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background: url(images/radio-unchecked.png) no-repeat center / contain;
+    }
+}
+
+.form__radio input[type="radio"]:checked + label::before {
+    background-image: url(images/radio-checked.png);
+}
+
+.form__radio input[type="radio"]:focus + label::before {
+    box-shadow: 0 0 0.5rem rgba(26, 6, 63, 0.8);
+}
+// ---------------------------------------------------------------------

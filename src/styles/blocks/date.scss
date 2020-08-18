@@ -1,0 +1,32 @@
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    width: 6rem;
+    height: 7.5rem;
+    background-color: $color-red;
+    box-shadow: 0.2rem 0.4rem 0.5rem 0px rgba(0,0,0,0.5);
+    border-radius: 20%;
+
+    &__content {
+        
+        font-size: 1.8rem;
+        line-height: 1.1;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+
+        &--month {
+            padding-bottom: 0.5rem;
+            font-size: 1.4rem;
+            border-bottom: 1px solid rgba(207, 202, 209, 0.6);
+        }
+
+        &--message {
+            padding-top: 0.3rem;
+        }
+    }
+}

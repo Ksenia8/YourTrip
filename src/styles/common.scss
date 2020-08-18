@@ -8,17 +8,15 @@
 
 html {
     font-size: 62.5%;
-    color: $main-color;
+    color: $color-black;
     scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
+    line-height: 1.2;
     overflow-x: hidden;
-
-    // font-family: 'Damion', cursive;
-    // font-family: 'Open Sans', sans-serif;
-    // font-family: 'PT Sans Narrow', sans-serif;
+    font-family: $font-family;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,6 +63,63 @@ ul {
 .section {
     padding: 3.9rem 0;
     overflow: hidden;
-    
-    
 }
+
+.heading-wrap {
+    position: relative;
+    margin: 9.5rem 0;
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Damion', cursive;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.title {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-blue;
+
+    &--center {
+        text-align: center;
+    }
+
+    &--yellow {
+        padding: 0;
+        color: #f3aa29;
+        font-size: 7.2rem;
+        font-weight: 300;
+    }
+
+    &--white {
+        padding: 0;
+        color: #fff;
+    }
+
+    &--padding {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph {
+    margin-bottom: 2rem;
+}
+
+

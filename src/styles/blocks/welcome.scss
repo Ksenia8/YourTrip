@@ -1,0 +1,32 @@
+.img-wrap {
+    margin: 0 2rem 2rem 0;
+    width: 48%;
+}
+.img-welcome {
+    width: 19rem;
+}
+
+.img-face {
+    width: 9rem;
+}
+
+.blockqoute__paragraph {
+    border-left: 0.6rem solid #BFE2FF;
+    font-style: italic;
+    line-height: 1.4;
+    // margin: 16px;
+    padding-left: 2.4rem;
+    position: relative;
+}
+
+.blockqoute__cite {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    text-align: right;
+    color: $color-yellow;
+}

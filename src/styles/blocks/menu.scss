@@ -1,0 +1,33 @@
+.menu {
+    
+    background-color: $color-red;
+    box-shadow: 0.2rem 0.4rem 0.5rem 0 rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-around;
+
+    &__list {
+        width: 17.7rem;
+        
+        &:last-child {
+            border-right: 1px solid rgba(207, 202, 209, 0.6);
+            
+        }
+    }
+
+    &__item {
+        padding: 2rem 0;
+        display: block;
+        color: #433d45;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        text-align: center;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
