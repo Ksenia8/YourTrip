@@ -1,0 +1,53 @@
+.offers {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    position: relative;
+    background-color: #fff;
+
+    &__left {
+        width: 61.4rem;
+    }
+
+    &__right {
+        width: 22.1rem;
+    }
+}
+
+.offers-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.menu-choose {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__item {
+        margin-bottom: 0.5rem;
+        padding-left: 2rem;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            content: url(images/arrow.png);
+            position: absolute;
+            left: 0;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &__link {
+        color: $color-gray;
+
+        &:hover {
+            color:$color-yellow;
+        }
+    }
+}

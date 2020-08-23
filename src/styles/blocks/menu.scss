@@ -35,3 +35,16 @@
     }
 }
 
+.menu-choose {
+    
+    
+}
+
+.menu-choose__item::before {
+    content: "\003C";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    height: 10rem;
+}

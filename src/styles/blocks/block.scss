@@ -1,0 +1,27 @@
+.block {
+    padding-left: 1.5rem;
+   
+    &__title {
+        margin-bottom: 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: $color-yellow;
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        font-weight: 400;
+        color: #737272;
+    }
+}
+
+.offer-block {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

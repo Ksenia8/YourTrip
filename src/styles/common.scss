@@ -32,6 +32,7 @@ table {
 img {
     width: 100%;
     object-fit: cover;
+    display: block;
 }
 
 a {
@@ -106,6 +107,10 @@ ul {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+
+    &--fs20 {
+        font-size: 20px;
+    }
 }
 
 .row {
@@ -120,6 +125,10 @@ ul {
 
 .paragraph {
     margin-bottom: 2rem;
+
+    &--fs14 {
+        font-size: 14px;
+    }
 }
 
 
