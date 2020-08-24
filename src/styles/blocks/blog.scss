@@ -1,0 +1,25 @@
+.blog {
+    background-color: #fff;
+
+    &-wrapp {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    &__left {
+        width: 54rem;
+    }
+
+    &-post {
+        
+        padding-bottom: 3rem;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}

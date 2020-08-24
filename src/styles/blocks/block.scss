@@ -1,5 +1,9 @@
 .block {
     padding-left: 1.5rem;
+
+    &-padding {
+        padding-left: 0;
+    }
    
     &__title {
         margin-bottom: 1.2rem;
