@@ -1,0 +1,27 @@
+.contacts {
+    background-color: #fff;
+
+    &-wrapp {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    &__left {
+        width: 38rem;
+        color: #737272;
+    }
+
+    &__right {
+        width: 46rem;
+    }
+}
+
+.contacts-data {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+}

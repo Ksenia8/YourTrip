@@ -5,6 +5,10 @@
 
     &__actions {
         display: flex;
+
+        &--contacts {
+            justify-content: flex-end;
+        }
     }
     
     &__fieldset {
@@ -40,6 +44,10 @@
 
         &--filter {
             width: 45%;
+        }
+
+        &--contacts {
+            width: 100%;
         }
     }
 
@@ -94,6 +102,11 @@
         &--radio {
             justify-content: start;
         }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
     }
 }
 
