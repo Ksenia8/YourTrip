@@ -5,11 +5,22 @@
     background-color: #fff;
 
     &__left {
-        width: 61.4rem;
+        width: 73.53%;
+
+        @include tablets {
+            width: 100%;
+            
+        }
     }
 
     &__right {
-        width: 22.1rem;
+        margin-left: 5rem;
+        width: 26.47%;
+
+        @include tablets {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
@@ -19,6 +30,10 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
+
+    @include tablets {
+        flex-wrap: wrap;
+    }
 }
 
 .menu-choose {

@@ -12,6 +12,10 @@
 
 .img-offers {
     width: 60rem;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .img-blog {
@@ -20,8 +24,13 @@
 }
 
 .img-contacts {
-    margin-top: 2rem;
+    // margin-top: 2rem;
     margin-bottom: 2rem;
+
+    @include tablets {
+        padding: 2rem;
+        margin-bottom: 0;
+    }
 }
 
 .blockqoute__paragraph {

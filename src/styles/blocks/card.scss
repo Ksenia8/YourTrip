@@ -36,6 +36,10 @@
     align-items: center;
     position: relative;
     top: -4rem;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .card-figure {
@@ -62,11 +66,19 @@
     &:hover {
         transform: scale(1.02);
     }
+
+    @include tablets {
+        width: 50%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .figcaption {
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;

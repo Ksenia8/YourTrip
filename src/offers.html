@@ -12,30 +12,31 @@
         <div class="container">
             <div class="header-wrap">
                 <div class="header__menu">
+                    <div class="toggle" onclick="toggleMenu();"></div>
                     <nav class="menu">
                         <ul>
                             <li class="menu__list">
-                                <a href="index.html" class="menu__item">About</a>
+                                <a href="index.html" class="menu__item" onclick="toggleMenu();">About</a>
                             </li>
                         </ul>
                         <ul>
                             <li class="menu__list">
-                                <a href="tours.html" class="menu__item">Hot tours</a>
+                                <a href="tours.html" class="menu__item" onclick="toggleMenu();">Hot tours</a>
                             </li>
                         </ul>
                         <ul>
                             <li class="menu__list">
-                                <a href="offers.html" class="menu__item menu__item--current">Special offers</a>
+                                <a href="offers.html" class="menu__item menu__item--current" onclick="toggleMenu();">Special offers</a>
                             </li>
                         </ul>
                         <ul>
                             <li class="menu__list">
-                                <a href="blog.html" class="menu__item">Blog</a>
+                                <a href="blog.html" class="menu__item"onclick="toggleMenu();">Blog</a>
                             </li>
                         </ul>
                         <ul>
                             <li class="menu__list">
-                                <a href="contacts.html" class="menu__item">Contacts</a>
+                                <a href="contacts.html" class="menu__item" onclick="toggleMenu();">Contacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -192,7 +193,16 @@
         </div>
     </footer>
     
-   <script src="main.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.min.js"></script>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
     
 </body>
 </html>

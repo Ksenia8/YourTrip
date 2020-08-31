@@ -14,6 +14,7 @@
     border-radius: 0.8rem;
     font-size: 1.4rem;
     line-height: 1.1;
+    white-space: nowrap;
 
     &--right {
         margin-left: auto;
@@ -61,5 +62,9 @@
         background: #e5e5e5;
         color: $color-red;
         border-radius: 15rem;
+    }
+
+    &--clear {
+        margin-right: 1.5rem;
     }
 }

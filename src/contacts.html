@@ -12,30 +12,31 @@
         <div class="container">
             <div class="header-wrap">
                 <div class="header__menu">
+                    <div class="toggle" onclick="toggleMenu();"></div>
                     <nav class="menu">
                         <ul>
                             <li class="menu__list">
-                                <a href="index.html" class="menu__item">About</a>
+                                <a href="index.html" class="menu__item" onclick="toggleMenu();">About</a>
                             </li>
                         </ul>
                         <ul>
                             <li class="menu__list">
-                                <a href="tours.html" class="menu__item">Hot tours</a>
+                                <a href="tours.html" class="menu__item" onclick="toggleMenu();">Hot tours</a>
                             </li>
                         </ul>
                         <ul>
                             <li class="menu__list">
-                                <a href="offers.html" class="menu__item">Special offers</a>
+                                <a href="offers.html" class="menu__item" onclick="toggleMenu();">Special offers</a>
                             </li>
                         </ul>
                         <ul>
                             <li class="menu__list">
-                                <a href="blog.html" class="menu__item">Blog</a>
+                                <a href="blog.html" class="menu__item"onclick="toggleMenu();">Blog</a>
                             </li>
                         </ul>
                         <ul>
                             <li class="menu__list">
-                                <a href="contacts.html" class="menu__item  menu__item--current">Contacts</a>
+                                <a href="contacts.html" class="menu__item menu__item--current" onclick="toggleMenu();">Contacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -60,13 +61,17 @@
                     <div class="img-contacts">
                         <img src="images/contacts.jpg" alt="contacts">
                     </div>
-                    <div class="contacts-data">The Company Name Inc.</div>
-                    <div class="contacts-data">8901 Marmora Road,</div>
-                    <div class="contacts-data">Glasgow, D04 89GR.</div>
-                    <div class="contacts-data">Freephone:+1 800 559 6580</div>
-                    <div class="contacts-data">Telephone:+1 800 603 6035</div>
-                    <div class="contacts-data">FAX:+1 800 889 9898</div>
-                    <div class="contacts-data">E-mail: <span>mail@demolink.org</span></div>
+                    <div class="contacts-data-inner">
+                        <div class="contacts-data">The Company Name Inc.</div>
+                        <div class="contacts-data">8901 Marmora Road,</div>
+                        <div class="contacts-data">Glasgow, D04 89GR.</div>
+                    </div>
+                    <div class="contacts-data-inner">
+                        <div class="contacts-data">Freephone:+1 800 559 6580</div>
+                        <div class="contacts-data">Telephone:+1 800 603 6035</div>
+                        <div class="contacts-data">FAX:+1 800 889 9898</div>
+                        <div class="contacts-data">E-mail: <span>mail@demolink.org</span></div>
+                    </div>
                 </div>
                 <div class="contacts__right">
                     <div class="title-wrap">
@@ -97,7 +102,7 @@
                             
                         </fieldset>
                         <div class="form__actions form__actions--contacts">
-                            <button class="btn">Clear</button>
+                            <button class="btn btn--clear">Clear</button>
                             <button class="btn">Submit</button>
                         </div>
                     </form>
@@ -129,7 +134,16 @@
         </div>
     </footer>
 
-   <script src="main.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.min.js"></script>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
     
 </body>
 </html>

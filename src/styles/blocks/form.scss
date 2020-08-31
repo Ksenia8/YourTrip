@@ -1,5 +1,12 @@
 .form-wrapper {
     max-width: 43.3rem;
+
+    @include tablets {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
 .form {
 
@@ -34,6 +41,10 @@
 
         &--info {
             width: 45%;
+
+            @include phones {
+                width: 100%;
+            }
         }
 
         &--message {

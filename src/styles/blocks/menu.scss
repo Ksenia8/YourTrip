@@ -7,9 +7,17 @@
 
     &__list {
         width: 17.7rem;
+
+        @include laptop {
+            width: 100%;
+        }
         
         &:last-child {
             border-right: 1px solid rgba(207, 202, 209, 0.6);
+
+            @include laptop {
+                border-right: 0;
+            }
             
         }
     }
@@ -25,19 +33,37 @@
         line-height: 1.5;
         text-align: center;
 
+        @include laptop {
+            font-size: 3.8rem;
+        }
+
         &--current {
             color: #fff;
+
+            @include laptop {
+                color: #433d45;
+            }
         }
 
         &:hover {
             color: #fff;
         }
     }
-}
 
-.menu-choose {
-    
-    
+    @include laptop {
+        padding: 100px 50px;
+        position: fixed;
+        z-index: 999;
+        top: 75px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        text-align: center;
+        background: rgb(247, 199, 199);
+        transition: .5s;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
 }
 
 .menu-choose__item::before {
@@ -47,4 +73,44 @@
     left: 0;
     width: 10rem;
     height: 10rem;
+}
+
+.menu.active {
+
+    @include laptop {
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $color-red;
+    }
+}
+
+.toggle {
+    
+    @include laptop {
+        margin-left: auto;
+        margin-top: 1.5rem;
+        width: 4rem;
+        height: 4rem;
+        background: url(images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+}
+
+.toggle.active {
+
+    @include laptop {
+        position: fixed;
+        top: 0.5rem;
+        right: 1.5rem;
+        z-index: 1000;
+        background: url(images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 2.5rem;
+        cursor: pointer;
+    }
 }

@@ -1,4 +1,6 @@
 .contacts {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
     background-color: #fff;
 
     &-wrapp {
@@ -6,17 +8,29 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        
+        @include tablets {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__left {
         width: 38rem;
         color: #737272;
+
+        @include tablets {
+            width: 100%;
+        }
     }
 
     &__right {
         width: 46rem;
+        margin-left: 1rem;
+
+        @include tablets {
+            width: 100%;
+        }
     }
 }
 
@@ -24,4 +38,19 @@
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.2;
+}
+
+.contacts-data-inner {
+    margin-bottom: 1.8rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

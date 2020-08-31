@@ -6,17 +6,30 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
+
 .new {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 33%;
     margin-right: 2rem;
-    
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @include tablets {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 4rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
